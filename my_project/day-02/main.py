@@ -27,19 +27,14 @@ class FruitBasket:
             print("The basket is empty.")
 
 def main():
-    # Create an instance of Fruit
     apple = Fruit("Apple", "Red")
 
-    # Create an instance of FruitBasket
     basket = FruitBasket()
 
-    # Add the fruit to the basket
     basket.add_fruit(apple)
 
-    # Remove the fruit from the basket
     basket.remove_fruit(apple)
 
-    # Print the basket content
     basket.print_basket()
 
 if __name__ == "__main__":

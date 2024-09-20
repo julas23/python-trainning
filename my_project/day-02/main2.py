@@ -27,20 +27,16 @@ class FruitBasket:
             print("The basket is empty.")
 
 def main():
-    # Create an instance of FruitBasket
     basket = FruitBasket()
 
-    # Ask the user how many fruits they want to add
     num_fruits = int(input("How many fruits do you want to add to the basket? "))
 
-    # Loop to add multiple fruits based on user input
     for _ in range(num_fruits):
         name = input("Enter the fruit name: ")
         color = input("Enter the fruit color: ")
         fruit = Fruit(name, color)
         basket.add_fruit(fruit)
 
-    # Print the basket content
     basket.print_basket()
 
 if __name__ == "__main__":
